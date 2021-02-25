@@ -1593,7 +1593,7 @@ input:-webkit-autofill {
 
 .social-links {
   margin: 0 auto;
-  width: 325px;
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1609,7 +1609,7 @@ input:-webkit-autofill {
 }
 
 .social-links__item {
-  height: 50px;
+  height: 51px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1682,6 +1682,8 @@ input:-webkit-autofill {
   background: #FFFFFF;
   border-radius: 18px;
   margin-bottom: 24px;
+  -webkit-box-shadow: 0px 18.3109px 31.09px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 18.3109px 31.09px rgba(0, 0, 0, 0.07);
 }
 
 .features__image svg, .features__image img {
@@ -1719,7 +1721,7 @@ input:-webkit-autofill {
 }
 
 .brands {
-  margin: 0 48px 60px;
+  margin: 0 45px 60px;
 }
 
 @media (max-width: 863px) {
@@ -1750,7 +1752,7 @@ input:-webkit-autofill {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 16px 36px;
+  margin: 0 18px 35px;
 }
 
 @media (max-width: 863px) {
@@ -1861,7 +1863,8 @@ input:-webkit-autofill {
   font-weight: normal;
   font-size: 52px;
   line-height: 102.3%;
-  margin: 0 0 32px;
+  margin: 0 0 23px;
+  padding-right: 80px;
 }
 
 @media (max-width: 863px) {
@@ -1887,8 +1890,10 @@ input:-webkit-autofill {
   line-height: 64px;
   padding-bottom: 20px;
   padding-right: 60px;
+  padding-left: 0;
   outline: none;
   color: #ffffff;
+  border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -2051,6 +2056,7 @@ iframe .embed-page {
   width: 56px;
   height: 56px;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .follow-btn__inner {
@@ -2078,6 +2084,11 @@ iframe .embed-page {
 .follow-btn__closed {
   -webkit-animation: rotateAnim linear 5s infinite;
           animation: rotateAnim linear 5s infinite;
+}
+
+.follow-btn__closed:hover {
+  -webkit-animation: rotateAnimHover linear 0.5s;
+          animation: rotateAnimHover linear 0.5s;
 }
 
 .follow-btn__opened {
@@ -2109,6 +2120,28 @@ iframe .embed-page {
             transform: rotate(0);
   }
   90% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateAnimHover {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAnimHover {
+  0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
