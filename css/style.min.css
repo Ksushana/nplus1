@@ -1541,13 +1541,29 @@ input:-webkit-autofill {
   padding-top: 443px;
   -webkit-transform: translateX(-372px);
           transform: translateX(-372px);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.landing__cyclists.start {
+  -webkit-transform: translateX(-172px);
+          transform: translateX(-172px);
+}
+
+@media (max-width: 863px) {
+  .landing__cyclists.start {
+    -webkit-transform: translateX(-4.65rem);
+            transform: translateX(-4.65rem);
+  }
 }
 
 @media (max-width: 863px) {
   .landing__cyclists {
     max-height: 6.55rem;
-    padding-top: 0;
-    margin-top: -0.225rem;
+    padding-top: 2.5rem;
+    margin-top: -2.725rem;
     -webkit-transform: translateX(-6.25rem);
             transform: translateX(-6.25rem);
     width: auto;
