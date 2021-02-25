@@ -1538,13 +1538,14 @@ input:-webkit-autofill {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 443px;
+  padding-top: 243px;
   -webkit-transform: translateX(-372px);
           transform: translateX(-372px);
   -webkit-transition: -webkit-transform 2s;
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
+  margin-top: 200px;
 }
 
 .landing__cyclists.start {
@@ -1728,6 +1729,7 @@ input:-webkit-autofill {
   line-height: 94.3%;
   text-align: center;
   font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
 @media (max-width: 863px) {
