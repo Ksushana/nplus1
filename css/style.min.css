@@ -2081,13 +2081,20 @@ iframe .embed-page {
 }
 
 .follow-btn__closed {
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+
+.follow-btn__closed svg {
   -webkit-animation: rotateAnim linear 5s infinite;
           animation: rotateAnim linear 5s infinite;
 }
 
 .follow-btn__closed:hover {
-  -webkit-animation: rotateAnimHover linear 0.5s;
-          animation: rotateAnimHover linear 0.5s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .follow-btn__opened {
