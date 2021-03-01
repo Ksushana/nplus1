@@ -61,12 +61,16 @@
             <div class="brands__item brands__item--silca"><img src="img/silca.svg" alt="" width="122" height="27"></div>
           </div>
         </div>
-        <div class="landing__subscribe subscribe-form">
+         <div class="landing__subscribe subscribe-form">
           <div class="subscribe-form__title">Get your weekly dose of the hottest cycling-related content:</div>
-          <form class="subscribe-form__form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjhv5CjmofNoV8-R2RkmdquzC4fq7fg0RFKEChb5XhnS3bwg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"><input id="email" type="email" name="entry.515699403" placeholder="Enter your email" autocomplete="off"><button class="subscribe-form__submit" type="submit"><svg width="22" height="24" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg></button></form><a class="subscribe-form__link" href="https://nplus1cc.substack.com/about?utm_source=nplus1.cc" target="_blank">Why is this newsletter so cool?<svg width="16" height="16" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#arrow-link"></use>
+          <form class="subscribe-form__form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjhv5CjmofNoV8-R2RkmdquzC4fq7fg0RFKEChb5XhnS3bwg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;"><input id="email" type="email" name="entry.515699403" placeholder="Enter your email" autocomplete="off" required><button class="subscribe-form__submit" type="submit"><svg width="22" height="24" aria-hidden="true">
+                <use xlink:href="landing/img/sprite.svg#arrow"></use>
+              </svg></button>
+            <div class="subscribe-form__sent hideButton"><svg width="21" height="15" aria-hidden="true">
+                <use xlink:href="landing/img/sprite.svg#tick"></use>
+              </svg>Sent</div>
+          </form><a class="subscribe-form__link" href="https://nplus1cc.substack.com/about?utm_source=nplus1.cc" target="_blank">Why is this newsletter so cool?<svg width="16" height="16" aria-hidden="true">
+              <use xlink:href="landing/img/sprite.svg#arrow-link"></use>
             </svg></a>
         </div>
         <div class="landing__social-links social-links landing__social-links--bottom"><a class="social-links__item" href="#"><img src="img/appstore.svg" alt="" width="148" height="50"></a><a class="social-links__item" href="#"><img src="img/play.svg" alt="" width="162" height="50"></a></div>
@@ -96,7 +100,7 @@
   <script src="js/script.min.js"></script>
   <script type="text/javascript">
     var submitted = false;
-  </script><iframe id="hidden_iframe" name="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='index.html';}"></iframe>
+  </script><iframe id="hidden_iframe" name="hidden_iframe" style="display:none;" onload="if(submitted)  {submittedForm()}"></iframe>
 </body>
 
 </html>
