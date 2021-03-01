@@ -2040,6 +2040,7 @@ input:-webkit-autofill {
 }
 
 .subscribe-form__sent {
+  font-family: "Segoe UI", "Times New Roman", serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 28px;
